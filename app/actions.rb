@@ -1,3 +1,3 @@
 get '/' do
-    File.read(File.join('app/views', 'practice.html'))
+    File.read(File.join('app/views', 'index.html'))
 end
