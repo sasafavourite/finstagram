@@ -10,6 +10,21 @@
 </head>
 
 <body>
+<header>
+<h1>
+<a href="/">Finstagram</a>
+</h1>
+<div class="login-info">
+<% if current_user %>
+<%= current_user.username %>
+<a href="/logout">logout</a>
+<% else %>
+<a href="/login>login</a>
+<a href="/signup">signup</a>
+<% end %>
+</div>
+</header>
+<main role="main">
     <%=yield%>
 </body>
 </html>
