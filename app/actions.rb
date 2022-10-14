@@ -66,7 +66,7 @@ post '/finstagram_posts' do
 
 if 
     @finstagram_post.save
-    redirect(to('/'))
+    redirect to('/')
 else
     @finstagram_post.errors.full_messages.inspect
 end
